@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 
 
 // Frontend Site
-Route::get('/','FrontendController@index');
+Route::get('/','HomeController@index');
 
 
 
@@ -29,4 +29,4 @@ Route::get('/','FrontendController@index');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/admin', 'AdminController@index')->name('admin');
