@@ -18,15 +18,16 @@ use Illuminate\Support\Facades\Route;
 // });
 
 
-// Frontend Site
+// Frontend Routes
 Route::get('/','HomeController@index');
 
 
 
-// Backend Site
 
 
+// Backend Routes
 
 Auth::routes();
 
-Route::get('/admin', 'AdminController@index')->name('admin');
+Route::get('/admin', 'AdminController@index');
+Route::get('/dashboard','AdminController@show_dashboard');
