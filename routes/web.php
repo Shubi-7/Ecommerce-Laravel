@@ -31,3 +31,4 @@ Auth::routes();
 
 Route::get('/admin', 'AdminController@index');
 Route::get('/dashboard','AdminController@show_dashboard');
+Route::post('/admin_dashboard','AdminController@dashboard');

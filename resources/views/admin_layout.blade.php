@@ -33,7 +33,7 @@
 	<![endif]-->
 		
 	<!-- start: Favicon -->
-	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="shortcut icon" href="{{asset('backend/img/favicon.ico')}}">
 	<!-- end: Favicon -->
 	
 		
