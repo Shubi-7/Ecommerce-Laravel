@@ -432,8 +432,22 @@
     <script src="{{asset('backend/js/jquery.sparkline.min.js')}}"></script>
     <script src="{{asset('backend/js/counter.js')}}"></script>
     <script src="{{asset('backend/js/retina.js')}}"></script>
-    <script src="{{asset('backend/js/custom.js')}}"></script>
+	<script src="{{asset('backend/js/custom.js')}}"></script>
+	
 	<!-- end: JavaScript-->
+
+	<script src="{{asset('dashboard/js/bootbox.min.js')}}"></script>
+	<script type="text/javascript">
+		$(document).on('click',"#delete", function (e) {
+			e.preventDefault();
+			href = $(this).attr('href');
+			return bootbox.confirm('Are you want to delete?', function(result) {
+				if (result) {
+					window.location = href;
+				}
+			});
+		});
+	</script>
 	
 </body>
 
