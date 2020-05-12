@@ -213,7 +213,7 @@
 								</li>	
                             	<li>
                                     <a href="#">
-										<span class="avatar"><img src="img/avatar.jpg" alt="Avatar"></span>
+										<span class="avatar"><img src="backend/img/avatar.jpg" alt="Avatar"></span>
 										<span class="header">
 											<span class="from">
 										    	Łukasz Holeczek
@@ -229,7 +229,7 @@
                                 </li>
                                 <li>
                                     <a href="#">
-										<span class="avatar"><img src="img/avatar2.jpg" alt="Avatar"></span>
+										<span class="avatar"><img src="{{asset('backend/img/avatar2.jpg')}}" alt="Avatar"></span>
 										<span class="header">
 											<span class="from">
 										    	Megan Abott
@@ -306,7 +306,7 @@
 						<li class="dropdown">
 							<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
 								<i class="halflings-icon white user"></i> 
-								{{ Session::get('admin_name')}}
+								{{Session::get('admin_name')}}
 							</a>
 							<ul class="dropdown-menu">
 								<li class="dropdown-menu-title">
@@ -334,7 +334,7 @@
 				<div class="nav-collapse sidebar-nav">
 					<ul class="nav nav-tabs nav-stacked main-menu">
 					<li><a href="{{URL::to('/dashboard')}}"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Dashboard</span></a></li>	
-						<li><a href="messages.html"><i class="icon-envelope"></i><span class="hidden-tablet"> All Category</span></a></li>
+					<li><a href="{{URL::to('/all-category')}}"><i class="icon-envelope"></i><span class="hidden-tablet"> All Category</span></a></li>
 					<li><a href="{{URL::to('/add-category')}}"><i class="icon-tasks"></i><span class="hidden-tablet"> Add Category</span></a></li>
 						<li><a href="ui.html"><i class="icon-eye-open"></i><span class="hidden-tablet"> All Brands</span></a></li>
 						<li><a href="widgets.html"><i class="icon-dashboard"></i><span class="hidden-tablet"> Add Brands</span></a></li>
@@ -410,8 +410,8 @@
     <script src="{{asset('backend/js/modernizr.js')}}"></script>
     <script src="{{asset('backend/js/bootstrap.min.js')}}"></script>
     <script src="{{asset('backend/js/jquery.cookie.js')}}"></script>
-    <script src='{{asset('js/fullcalendar.min.js')}}'></script>
-    <script src='{{asset('js/jquery.dataTables.min.js')}}'></script>
+    <script src='{{asset('backend/js/fullcalendar.min.js')}}'></script>
+    <script src='{{asset('backend/js/jquery.dataTables.min.js')}}'></script>
     <script src="{{asset('backend/js/excanvas.js')}}"></script>
     <script src="{{asset('backend/js/jquery.flot.js')}}"></script>
     <script src="{{asset('backend/js/jquery.flot.pie.js')}}"></script>
