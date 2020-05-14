@@ -116,15 +116,15 @@ class CategoryController extends Controller
       }
   
   
-      public function AdminAuthCheck(){
+      // public function AdminAuthCheck(){
   
-        $admin_id=Session::get('admin_id');
-        if ($admin_id){
+      //   $admin_id=Session::get('admin_id');
+      //   if ($admin_id){
   
-          return;
-        }else{
+      //     return;
+      //   }else{
   
-          return Redirect::to('/admin')->send();
-        }
-      }
+      //     return Redirect::to('/admin')->send();
+      //   }
+      // }
 }
