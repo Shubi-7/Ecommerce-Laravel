@@ -39,7 +39,7 @@ class CheckoutController extends Controller
 				$data['shipping_address']=$request->shipping_address;
 				$data['shipping_mobile_number']=$request->shipping_mobile_number;		
 				$data['shipping_city']=$request->shipping_city;
-					$shiping_id=Db::table('tbl_shipping')
+					$shipping_id=Db::table('tbl_shipping')
 				            ->insertGetId($data);
 				            Session::put('shipping_id',$shipping_id);
 				return Redirect::to('/payment');
@@ -76,7 +76,7 @@ class CheckoutController extends Controller
           
           $payment_method=$request->payment_method;
           $customer_id=Session::get('customer_id');
-          $shiping_id=Session::get('shiping_id');
+          $shipping_id=Session::get('shipping_id');
 
           $pdata=array();
           $pdata['payment_method']=$payment_method;
@@ -86,7 +86,7 @@ class CheckoutController extends Controller
                       
             $odata=array();
             $odata['customer_id']=Session::get('customer_id');
-            $odata['shiping_id']=Session::get('shiping_id');
+            $odata['shipping_id']=Session::get('shipping_id');
             $odata['payment_id']=$payment_id;
             $odata['order_total']=Cart::total();
             $odata['order_status']='pending';
@@ -138,7 +138,7 @@ class CheckoutController extends Controller
 
 			 ->join('tbl_customer','tbl_order.customer_id','=','tbl_customer.customer_id')
 			 ->join('tbl_order_details','tbl_order.order_id','=','tbl_order_details.order_id')
-			 ->join('tbl_shipping','tbl_order.shiping_id','=','tbl_shipping.shiping_id')
+			 ->join('tbl_shipping','tbl_order.shipping_id','=','tbl_shipping.shipping_id')
 
              ->select('tbl_order.*','tbl_customer.*','tbl_order_details.*','tbl_shipping.*')
              ->get();

@@ -59,7 +59,7 @@
 
 
 							<div class="control-group">
-								<label class="control-label"  for="selectError3">Product category</label>
+								<label class="control-label"  for="selectError3">Product Category</label>
 								<div class="controls">
 									<select id="selectError3" name="category_id" required="">
 										<option value="">select category</option>
@@ -80,13 +80,13 @@
 							</div>
 
 							<div class="control-group">
-								<label class="control-label"  for="selectError3">manufacture Name</label>
+								<label class="control-label"  for="selectError3">Manufacture Name</label>
 								<div class="controls">
 									<select id="selectError3" name="manufacture_id" required="">
 										<option value="">select manufacture</option>
 										
 										<?php
-										$all_published_fanufacture=DB::table('tbl_manufactue')
+										$all_published_fanufacture=DB::table('tbl_manufacture')
 										->where('publication_status',1)
 										->get();
 
@@ -105,14 +105,14 @@
 
 							         
 							<div class="control-group hidden-phone">
-							  <label class="control-label" for="textarea2">Products short Description </label>
+							  <label class="control-label" for="textarea2">Product Short Description </label>
 							  <div class="controls">
 								<textarea type="" class="cleditor" name="product_short_description" rows="3" required=""></textarea>
 							  </div>
 							</div>
 
 							<div class="control-group hidden-phone">
-							  <label class="control-label" for="textarea2">Products long Description </label>
+							  <label class="control-label" for="textarea2">Product Long Description </label>
 							  <div class="controls">
 								<textarea type="" class="cleditor" name="product_long_description" rows="3" required="" ></textarea>
 							  </div>

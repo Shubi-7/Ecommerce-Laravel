@@ -4,10 +4,8 @@
 	
 	<!-- start: Meta -->
 	<meta charset="utf-8">
-	<title>Bootstrap Metro Dashboard by Dennis Ji for ARM demo</title>
-	<meta name="description" content="Bootstrap Metro Dashboard">
-	<meta name="author" content="Dennis Ji">
-	<meta name="keyword" content="Metro, Metro UI, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+	<title>Admin Panel</title>
+	<meta name="description" content="Admin Panel">
 	<!-- end: Meta -->
 	
 	<!-- start: Mobile Specific -->
@@ -52,7 +50,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-				<a class="brand" href="index.html"><span>Metro</span></a>
+				<a class="brand" href="index.html"><span>Admin Panel</span></a>
 								
 				<!-- start: Header Menu -->
 				<div class="nav-no-collapse header-nav">
@@ -346,12 +344,12 @@
 				<div class="nav-collapse sidebar-nav">
 					<ul class="nav nav-tabs nav-stacked main-menu">
 						<li><a href="{{url::to('/dashboardd')}}"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Dashboard</span></a></li>	
-						<li><a href="{{url::to('/all-category')}}"><i class="icon-envelope"></i><span class="hidden-tablet"> All Catrgory</span></a></li>
-						<li><a href="{{url::to('/add-category')}}"><i class="icon-tasks"></i><span class="hidden-tablet"> Add Catrgory</span></a></li>
+						<li><a href="{{url::to('/all-category')}}"><i class="icon-envelope"></i><span class="hidden-tablet"> All Category</span></a></li>
+						<li><a href="{{url::to('/add-category')}}"><i class="icon-tasks"></i><span class="hidden-tablet"> Add Category</span></a></li>
 
 
-						<li><a href="{{url::to('/all-manufacture')}}"><i class="icon-eye-open"></i><span class="hidden-tablet"> All manufacture</span></a></li>
-						<li><a href="{{url::to('/add-manufacture')}}"><i class="icon-dashboard"></i><span class="hidden-tablet"> Add manufacture</span></a></li>
+						<li><a href="{{url::to('/all-manufacture')}}"><i class="icon-eye-open"></i><span class="hidden-tablet"> All Manufacture</span></a></li>
+						<li><a href="{{url::to('/add-manufacture')}}"><i class="icon-dashboard"></i><span class="hidden-tablet"> Add Manufacture</span></a></li>
 						<li>
 							<a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> Products</span><span class="label label-important"> 3 </span></a>
 							<ul>
@@ -363,17 +361,17 @@
 						<li>
 							<a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> Slider</span><span class="label label-important"> 3 </span></a>
 							<ul>
-								<li><a class="submenu" href="{{url::to('/add-slider')}}"><i class="icon-file-alt"></i><span class="hidden-tablet"> Add slider</span></a></li>
-								<li><a class="submenu" href="{{url::to('/all-slider')}}"><i class="icon-file-alt"></i><span class="hidden-tablet">All slider</span></a></li>
+								<li><a class="submenu" href="{{url::to('/add-slider')}}"><i class="icon-file-alt"></i><span class="hidden-tablet"> Add Slider</span></a></li>
+								<li><a class="submenu" href="{{url::to('/all-slider')}}"><i class="icon-file-alt"></i><span class="hidden-tablet">All Slider</span></a></li>
 								
 							
 							</ul>	
 						</li>
 						
-						<li><a href="{{url::to('/order-manage')}}"><i class="icon-list-alt"></i><span class="hidden-tablet">  Manage Order</span></a></li>
+						<li><a href="{{url::to('/order-manage')}}"><i class="icon-list-alt"></i><span class="hidden-tablet">  Manage Orders</span></a></li>
 
 						<li><a href="typography.html"><i class="icon-font"></i><span class="hidden-tablet"> Shop Name</span></a></li>
-						<li><a href="gallery.html"><i class="icon-picture"></i><span class="hidden-tablet"> Delivery Man</span></a></li>
+						<li><a href="gallery.html"><i class="icon-picture"></i><span class="hidden-tablet"> Delivery Person</span></a></li>
 
 					
 					</ul>
@@ -420,7 +418,7 @@
 	<footer>
 
 		<p>
-			<span style="text-align:left;float:left">&copy; 2013 <a href="http://jiji262.github.io/Bootstrap_Metro_Dashboard/" alt="Bootstrap_Metro_Dashboard">Bootstrap Metro Dashboard</a></span>
+			<span style="text-align:left;float:left">&copy; 2020 <a href="#" alt="Admin Dashboard">Admin Panel</a></span>
 			
 		</p>
 

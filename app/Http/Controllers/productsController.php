@@ -21,10 +21,10 @@
 
              $all_product_info = DB::table('tbl_products')
              ->join('tbl_category','tbl_products.category_id','=','tbl_category.category_id')
-             ->join('tbl_manufactue','tbl_products.manufacture_id','=','tbl_manufactue.manufacture_id')
-            // ->select('tbl_products','tbl_products.category_name','=','tbl_manufactue.manufacture_name')
+             ->join('tbl_manufacture','tbl_products.manufacture_id','=','tbl_manufacture.manufacture_id')
+            // ->select('tbl_products','tbl_products.category_name','=','tbl_manufacture.manufacture_name')
 
-            ->select('tbl_products.*' , 'tbl_category.category_name', 'tbl_manufactue.manufacture_name')
+            ->select('tbl_products.*' , 'tbl_category.category_name', 'tbl_manufacture.manufacture_name')
              ->get();
 
           // echo "<pre>";

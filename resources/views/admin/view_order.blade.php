@@ -43,7 +43,7 @@
 				
 				<div class="box span6">
 					<div class="box-header">
-						<h2><i class="halflings-icon align-justify"></i><span class="break"></span>Shiping Details </h2>
+						<h2><i class="halflings-icon align-justify"></i><span class="break"></span>Shipping Details </h2>
 						<div class="box-icon">
 							<a href="#" class="btn-setting"><i class="halflings-icon wrench"></i></a>
 							<a href="#" class="btn-minimize"><i class="halflings-icon chevron-up"></i></a>
@@ -66,10 +66,10 @@
 							  	@endforeach
 							  	
 								<tr>									
-								<td>{{$v_order->shiping_first_name}}</td>
-								<td class="center">{{$v_order->shiping_address}}</td>
-								<td class="center">{{$v_order->shiping_mobile_number}}</td>
-								<td class="center">{{$v_order->shiping_email}}</td>									                                       
+								<td>{{$v_order->shipping_first_name}}</td>
+								<td class="center">{{$v_order->shipping_address}}</td>
+								<td class="center">{{$v_order->shipping_mobile_number}}</td>
+								<td class="center">{{$v_order->shipping_email}}</td>									                                       
 								</tr>
 								
 							                                  
