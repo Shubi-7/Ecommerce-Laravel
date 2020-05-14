@@ -39,7 +39,7 @@
 					</p>
 					<div class="box-content">
 
-						<form class="form-horizontal" action="{{url('/save-category')}}">
+						<form class="form-horizontal" action="{{url('/save-category')}}" mathod="post">
 
                                  {{ csrf_field() }}
 						  <fieldset>

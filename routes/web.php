@@ -48,13 +48,14 @@ Route::get('/view-order/{order_id}','CheckoutController@view_order');
 
 
 
+
 // Backend Routes
 
 
 
 Route::get('/logout','SuperAdminController@logout');
 Route::get('/admin', 'AdminController@index');
-Route::get('/dashboard','AdminController@show_dashboard');
+Route::get('dashboard','AdminController@show_dashboard');
 Route::post('/admin_dashboard','AdminController@dashboard');
 
 
@@ -69,8 +70,7 @@ Route::get('/unactive-category/{category_id}','CategoryController@unactive_categ
 Route::get('/active-category/{category_id}','CategoryController@active_category');
 
 
-//manufacture as brand related routes...............
-
+//Manufacture or brand releated routes here!
 Route::get('/all-manufacture','ManufactureController@all_manufacture');
 Route::get('/add-manufacture','ManufactureController@add_manufacture');
 Route::get('/save-manufacture','ManufactureController@save_manufacture');
@@ -108,3 +108,5 @@ Route::get('/unactive-slider/{product_id}','SliderController@unactive_slider');
 Route::get('/active-slider/{product_id}','SliderController@active_slider');
 
 Route::get('/delete-slider/{slider_id}','SliderController@delete_slider');
+
+

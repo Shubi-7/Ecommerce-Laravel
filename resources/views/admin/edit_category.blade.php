@@ -31,7 +31,7 @@
 					</p>
 					<div class="box-content">
 
-						<form class="form-horizontal" action="{{url('/update-category',$edit_category_info->category_id)}}" method="get">
+						<form class="form-horizontal" action="{{url('/update-category',$edit_category_info->category_id)}}" mathod="post">
 
                                  {{ csrf_field() }}
 						  <fieldset>

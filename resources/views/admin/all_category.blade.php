@@ -1,8 +1,12 @@
 @extends('admin_layout')
 @section('admin_content')
 
+
+			
 			<!-- start: Content -->
 		
+			
+			
 			<ul class="breadcrumb">
 				<li>
 					<i class="icon-home"></i>
@@ -45,6 +49,9 @@
 								  <th>Actions</th>
 							  </tr>
 						  </thead> 
+
+                          
+						 
 						  <tbody>
 						  		<tr>
 								@foreach($all_category_info as $v_category)
@@ -74,6 +81,7 @@
 									</a>
 										@endif
 
+
 									<a class="btn btn-info" href="{{URL::to('/edit-category/'.$v_category->category_id)}}">
 										<i class="halflings-icon white edit"></i>  
 									</a>
@@ -81,10 +89,19 @@
 										<i class="halflings-icon white trash" ></i> 
 									</a>
 								</td>
+
+								 
 							</tr>
 								@endforeach
-						                     
+							
+							  
+						  	 
+
+							                                  
 							  </tbody>
+
+							
+
 						 </table>  
 						 <div class="pagination pagination-centered">
 						  <ul>
@@ -102,6 +119,10 @@
 				</div><!--/span-->
 			</div><!--/row-->
 			
+			
+	
+
+
 
 
 @endsection
