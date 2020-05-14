@@ -14,16 +14,16 @@
 				
 					<div class="col-sm-12 clearfix">
 						<div class="bill-to">
-							<p>Shiping Details</p>
+							<p>shipping Details</p>
 							<div class="form-one">
-								<form action="{{url('/save_shiping_details')}}" method="post">
+								<form action="{{url('/save_shipping_details')}}" method="post">
 								          {{ csrf_field() }}								
-									<input type="text" name="shiping_email" placeholder="Email*">							
-									<input type="text" name="shiping_first_name" placeholder="First Name *">
-									<input type="text" name="shiping_last_name" placeholder="Last Name *">
-									<input type="text" name="shiping_address" placeholder="Address *">
-									<input type="text" name="shiping_mobile_number" placeholder="Mobile Number *">
-									<input type="text" name="shiping_city" placeholder="City *">
+									<input type="text" name="shipping_email" placeholder="Email*">							
+									<input type="text" name="shipping_first_name" placeholder="First Name *">
+									<input type="text" name="shipping_last_name" placeholder="Last Name *">
+									<input type="text" name="shipping_address" placeholder="Address *">
+									<input type="text" name="shipping_mobile_number" placeholder="Mobile Number *">
+									<input type="text" name="shipping_city" placeholder="City *">
 									<input type="submit" class="btn btn-sm btn-default" value="Done" placeholder="City *">
 								</form>
 							</div>

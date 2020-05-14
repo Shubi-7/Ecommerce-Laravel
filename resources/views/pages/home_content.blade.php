@@ -8,7 +8,7 @@
 
 <?php
 
-$message=Session::get('shiping_id');
+$message=Session::get('shipping_id');
 if ($message) {
     $message;
 session::put('message',null);
