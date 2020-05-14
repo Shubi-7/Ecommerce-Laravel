@@ -86,7 +86,7 @@
 						{{ csrf_field() }}
 						<input type="radio" name="payment_method" value="handcash">HandCash</br>
 						<input type="radio" name="payment_method" value="cart">Debit Card</br>
-						<input type="radio" name="payment_method" value="bkash">Bkash</br>
+						<input type="radio" name="payment_method" value="esewa">Esewa</br>
 						<input type="submit" name="submit" value="Done">
 					</form>
 								

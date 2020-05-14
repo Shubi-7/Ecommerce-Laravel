@@ -111,8 +111,8 @@ class CheckoutController extends Controller
              	return view('pages.handcash');
              }elseif($payment_method=='cart'){
              	echo "cart";
-             }elseif($payment_method=='bkash'){
-             	echo "bkash";
+             }elseif($payment_method=='Esewa'){
+             	echo "Esewa";
              }else{
              	echo "not selected";
              }		
