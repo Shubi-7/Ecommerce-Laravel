@@ -9,6 +9,7 @@ use DB;
 use App\Http\Requests;
 use Session;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Str;
 
 session_start();
 
@@ -54,7 +55,7 @@ class SliderController extends Controller
 
 
                 DB::table('tbl_slider')->insert($data);
-                Session::put('message', 'slider added Successfully!');
+                Session::put('message', 'Slider Added Successfully!');
                 return Redirect::to('add-slider');
 
               }
@@ -62,7 +63,7 @@ class SliderController extends Controller
 
             $data['slider_image'] ="";
             DB::table('tbl_slider')->insert($data);
-            Session::put('message', 'slider added Successfull without image!');
+            Session::put('message', 'Slider Added Successfully Without image!');
             return Redirect::to('add-slider');
 
           
@@ -96,7 +97,7 @@ class SliderController extends Controller
            	->where('slider_id',$slider_id)
            	->update(['publication_status'=>0]);
 
-           	Session::put('message','data unactivated successfully!!');
+           	Session::put('message','Data Unactivated Successfully!!');
 
            	return Redirect::to('/all-slider');
 
@@ -109,7 +110,7 @@ class SliderController extends Controller
            	->where('slider_id',$slider_id)
            	->update(['publication_status'=>1]);
 
-           	Session::put('message','data activated successfully!!');
+           	Session::put('message','Data Activated Successfully!!');
 
            	return Redirect::to('/all-slider');
 
@@ -121,7 +122,7 @@ class SliderController extends Controller
             ->where('slider_id',$slider_id)
             ->delete();
 
-            Session::put('message','slider deleted successfully');
+            Session::put('message','Slider Deleted Successfully');
 
             return Redirect::to('/all-slider');
 
