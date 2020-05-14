@@ -74,7 +74,7 @@
                 $data['product_image'] =$image_url;
 
                 DB::table('tbl_products')->insert($data);
-                Session::put('message', 'product added Successfully!');
+                Session::put('message', 'Product Added Successfully!');
                 return Redirect::to('add-product');
 
               }
@@ -82,7 +82,7 @@
 
             $data['product_image'] ="";
             DB::table('tbl_products')->insert($data);
-            Session::put('message', 'product added Successfull without image!');
+            Session::put('message', 'Product Added Successfully Without Image!');
             return Redirect::to('add-product');
 
           }
@@ -95,7 +95,7 @@
             ->where('product_id',$product_id)
             ->update(['publication_status'=>0]);
 
-            Session::put('message','data unactivated successfully!!');
+            Session::put('message','Data Unactivated Successfully!!');
 
             return Redirect::to('/all-product');
 
@@ -108,7 +108,7 @@
               ->where('product_id',$product_id)
             ->update(['publication_status'=>1]);
 
-            Session::put('message','data activated successfully!!');
+            Session::put('message','Data Activated Successfully!!');
 
             return Redirect::to('/all-product');
 
@@ -120,7 +120,7 @@
             ->where('product_id',$product_id)
             ->delete();
 
-            Session::put('message','product deleted successfully');
+            Session::put('message','Product Deleted Successfully');
 
             return Redirect::to('/all-product');
 
@@ -188,7 +188,7 @@
                 DB::table('tbl_products')
                 ->where('product_id',$product_id)
                 ->update($data);
-                Session::put('message', 'product updated with image Successfully!');
+                Session::put('message', 'Product Updated With Image Successfully!');
                 return Redirect::to('add-product');
 
               }
@@ -196,7 +196,7 @@
 
             $data['product_image'] ="";
             DB::table('tbl_products')->where('product_id',$product_id)->update($data);
-            Session::put('message', 'product updated Successfull without image!');
+            Session::put('message', 'Product Updated Successfully Without Image!');
             return Redirect::to('add-product');
 
           }

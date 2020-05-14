@@ -72,14 +72,14 @@
 
 							         
 							<div class="control-group hidden-phone">
-							  <label class="control-label" for="textarea2">Products short Description </label>
+							  <label class="control-label" for="textarea2">Products Short Description </label>
 							  <div class="controls">
 								<textarea type="" class="cleditor" name="product_short_description" rows="3" required="">{{$edit_product_info->product_short_description}}</textarea>
 							  </div>
 							</div>
 
 							<div class="control-group hidden-phone">
-							  <label class="control-label" for="textarea2">Products long Description </label>
+							  <label class="control-label" for="textarea2">Products Long Description </label>
 							  <div class="controls">
 								<textarea type="" class="cleditor" name="product_short_description" rows="3" required="">{{$edit_product_info->product_long_description}}</textarea>
 							  </div>
@@ -110,7 +110,7 @@
 
 
 							<div class="control-group">
-								<label class="control-label" for="date01">Product color </label>
+								<label class="control-label" for="date01">Product Color </label>
 								<div class="controls">
 									<input type="text" class="input-xlarge" name="product_color" value="{{$edit_product_info->product_color}}" required="" >
 								</div>

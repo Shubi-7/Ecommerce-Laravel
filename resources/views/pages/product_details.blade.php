@@ -20,7 +20,7 @@
 								<p>color:{{$product_by_details->product_color}}</p>
 								<img src="{{URL::to('frontend/images/product-details/rating.png')}}" alt="" />
 								<span>
-									<span>{{$product_by_details->product_price}}Tk</span>
+									<span>Rs&nbsp;{{$product_by_details->product_price}}</span>
 									<form action="{{url('/add-to-cart')}}" method="post">
 										{{ csrf_field() }}
 									<label>Quantity:</label>
@@ -66,7 +66,7 @@
                                             <div class="single-products">
                                                 <div class="productinfo text-center">
                                                     <img style="width:200px;"  src="{{ url('/'.$item->product_image) }}" alt="" />
-                                                    <h2>INR {{$item->product_price}}</h2>
+                                                    <h2>Rs {{$item->product_price}}</h2>
                                                     <p>{{$item->product_name}}</p>
                                                     <a href="{{ url('view_product/'.$item->product_id) }}"><button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button></a>
                                                 </div>

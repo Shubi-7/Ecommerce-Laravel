@@ -24,14 +24,14 @@ session::put('message',null);
                     <div class="single-products">
                             <div class="productinfo text-center">
                                 <img src="{{URL::to( $v_published_product->product_image)}}" style="height: 200px; width: 200px;" alt="" />
-                                <h2>{{ $v_published_product->product_price }}Tk</h2>
+                                <h2>Rs&nbsp;{{ $v_published_product->product_price }}</h2>
                                 <p> {{ $v_published_product->product_name }}</p>
                                 
                 <a href="{{URL::to('/view_product/'.$v_published_product->product_id)}}" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
                             </div>
                             <div class="product-overlay">
                                 <div class="overlay-content">
-                                    <h2>{{ $v_published_product->product_price }} Tk</h2>
+                                    <h2>Rs&nbsp;{{ $v_published_product->product_price }}</h2>
                                     <a href="{{URL::to('/view_product/'.$v_published_product->product_id)}}"><p>{{ $v_published_product->product_name }}</p></a>
                                     <a href="{{URL::to('/view_product/'.$v_published_product->product_id)}}" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
                                 </div>
@@ -74,7 +74,7 @@ session::put('message',null);
                                 <div class="single-products">
                                     <div class="productinfo text-center">
                                         <img style="width:200px;"  src="{{ $item->product_image }}" alt="" />
-                                        <h2>INR {{$item->product_price}}</h2>
+                                        <h2>Rs {{$item->product_price}}</h2>
                                         <p>{{$item->product_name}}</p>
                                         <a href="{{ url('view_product/'.$item->product_id) }}"><button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button></a>
                                     </div>
