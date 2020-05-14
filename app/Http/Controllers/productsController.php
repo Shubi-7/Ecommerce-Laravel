@@ -5,6 +5,7 @@
           use App\Http\Requests;
           use Session;
           use Illuminate\Support\Facades\Redirect;
+          use Illuminate\Support\Str;
          // use Illuminate\Http\UploadedFile; 
           session_start();
 

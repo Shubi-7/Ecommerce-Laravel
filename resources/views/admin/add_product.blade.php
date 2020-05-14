@@ -62,7 +62,7 @@
 								<label class="control-label"  for="selectError3">Product Category</label>
 								<div class="controls">
 									<select id="selectError3" name="category_id" required="">
-										<option value="">select category</option>
+										<option value="">Select Category</option>
 
 										<?php
 										$all_published_category=DB::table('tbl_category')
@@ -83,7 +83,7 @@
 								<label class="control-label"  for="selectError3">Manufacture Name</label>
 								<div class="controls">
 									<select id="selectError3" name="manufacture_id" required="">
-										<option value="">select manufacture</option>
+										<option value="">Select Manufacture</option>
 										
 										<?php
 										$all_published_fanufacture=DB::table('tbl_manufacture')
