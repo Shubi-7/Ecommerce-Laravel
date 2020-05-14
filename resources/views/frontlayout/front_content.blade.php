@@ -35,7 +35,7 @@
                                 
                                 <ul class="nav nav-pills nav-stacked">
                                    <?php
-                                   $all_published_fanufacture=DB::table('tbl_manufactue')
+                                   $all_published_fanufacture=DB::table('tbl_manufacture')
                                    ->where('publication_status',1)
                                    ->get();
 

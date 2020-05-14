@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	
 	<!-- start: Meta -->
 	<meta charset="utf-8">
-	<title>Admin Panel</title>
-	<meta name="description" content="Admin Template">
+	<title>Bootstrap Metro Dashboard by Dennis Ji for ARM demo</title>
+	<meta name="description" content="Bootstrap Metro Dashboard">
+	<meta name="author" content="Dennis Ji">
+	<meta name="keyword" content="Metro, Metro UI, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 	<!-- end: Meta -->
 	
 	<!-- start: Mobile Specific -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- end: Mobile Specific -->
 	
-    <!-- start: CSS -->
-    <link id="bootstrap-style" href="{{asset('backend/css/bootstrap.min.css')}}" rel="stylesheet">
-    <link href="{{asset('backend/css/bootstrap-responsive.min.css')}}" rel="stylesheet">
-    <link id="base-style" href="{{asset('backend/css/style.css')}}" rel="stylesheet">
-    <link id="base-style-responsive" href="{{asset('backend/css/style-responsive.css')}}" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
-    <!-- end: CSS -->
+	<!-- start: CSS -->
+	<link id="bootstrap-style" href="{{asset('dashboard/css/bootstrap.min.css')}}" rel="stylesheet">
+	<link href="{{asset('dashboard/css/bootstrap-responsive.min.css')}}" rel="stylesheet">
+	<link id="base-style" href="{{asset('dashboard/css/style.css')}}" rel="stylesheet">
+	<link id="base-style-responsive" href="{{asset('dashboard/css/style-responsive.css')}}" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italiadminc,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
+	<!-- end: CSS -->
 	
 
 	<!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -33,7 +34,7 @@
 	<![endif]-->
 		
 	<!-- start: Favicon -->
-	<link rel="shortcut icon" href="{{asset('backend/img/favicon.ico')}}">
+	<link rel="shortcut icon" href="{{asset('dashboard/img/favicon.ico')}}">
 	<!-- end: Favicon -->
 	
 		
@@ -51,7 +52,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-				<a class="brand" href="index.html"><span>Admin Panel</span></a>
+				<a class="brand" href="index.html"><span>Metro</span></a>
 								
 				<!-- start: Header Menu -->
 				<div class="nav-no-collapse header-nav">
@@ -117,7 +118,7 @@
 								<li class="warning">
                                     <a href="#">
 										<span class="icon red"><i class="icon-shopping-cart"></i></span>
-										<span class="message">Transaction was canceled</span>
+										<span class="message">New comment</span>
 										<span class="time">6 hour</span> 
                                     </a>
                                 </li>
@@ -171,7 +172,7 @@
                                 <li>
                                     <a href="#">
 										<span class="header">
-											<span class="title">Django Project For Google</span>
+											<span class="title">ARM Development</span>
 											<span class="percent"></span>
 										</span>
                                         <div class="taskProgress progressSlim yellow">32</div> 
@@ -180,7 +181,7 @@
 								<li>
                                     <a href="#">
 										<span class="header">
-											<span class="title">SEO for new sites</span>
+											<span class="title">ARM Development</span>
 											<span class="percent"></span>
 										</span>
                                         <div class="taskProgress progressSlim greenLight">63</div> 
@@ -189,7 +190,7 @@
                                 <li>
                                     <a href="#">
 										<span class="header">
-											<span class="title">New blog posts</span>
+											<span class="title">ARM Development</span>
 											<span class="percent"></span>
 										</span>
                                         <div class="taskProgress progressSlim orange">80</div> 
@@ -213,10 +214,10 @@
 								</li>	
                             	<li>
                                     <a href="#">
-										<span class="avatar"><img src="backend/img/avatar.jpg" alt="Avatar"></span>
+										<span class="avatar"><img src="img/avatar.jpg" alt="Avatar"></span>
 										<span class="header">
 											<span class="from">
-										    	Łukasz Holeczek
+										    	Dennis Ji
 										     </span>
 											<span class="time">
 										    	6 min
@@ -229,10 +230,10 @@
                                 </li>
                                 <li>
                                     <a href="#">
-										<span class="avatar"><img src="{{asset('backend/img/avatar2.jpg')}}" alt="Avatar"></span>
+										<span class="avatar"><img src="img/avatar.jpg" alt="Avatar"></span>
 										<span class="header">
 											<span class="from">
-										    	Megan Abott
+										    	Dennis Ji
 										     </span>
 											<span class="time">
 										    	56 min
@@ -245,10 +246,10 @@
                                 </li>
                                 <li>
                                     <a href="#">
-										<span class="avatar"><img src="img/avatar3.jpg" alt="Avatar"></span>
+										<span class="avatar"><img src="img/avatar.jpg" alt="Avatar"></span>
 										<span class="header">
 											<span class="from">
-										    	Kate Ross
+										    	Dennis Ji
 										     </span>
 											<span class="time">
 										    	3 hours
@@ -261,10 +262,10 @@
                                 </li>
 								<li>
                                     <a href="#">
-										<span class="avatar"><img src="img/avatar4.jpg" alt="Avatar"></span>
+										<span class="avatar"><img src="img/avatar.jpg" alt="Avatar"></span>
 										<span class="header">
 											<span class="from">
-										    	Julie Blank
+										    	Dennis Ji
 										     </span>
 											<span class="time">
 										    	yesterday
@@ -277,10 +278,10 @@
                                 </li>
                                 <li>
                                     <a href="#">
-										<span class="avatar"><img src="img/avatar5.jpg" alt="Avatar"></span>
+										<span class="avatar"><img src="img/avatar.jpg" alt="Avatar"></span>
 										<span class="header">
 											<span class="from">
-										    	Jane Sanders
+										    	Dennis Ji
 										     </span>
 											<span class="time">
 										    	Jul 25, 2012
@@ -305,15 +306,21 @@
 						<!-- start: User Dropdown -->
 						<li class="dropdown">
 							<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-								<i class="halflings-icon white user"></i> 
+								<i class="halflings-icon white user"></i>
+
 								{{Session::get('admin_name')}}
+
+
+
+
+								<span class="caret"></span>
 							</a>
 							<ul class="dropdown-menu">
 								<li class="dropdown-menu-title">
  									<span>Account Settings</span>
 								</li>
 								<li><a href="#"><i class="halflings-icon user"></i> Profile</a></li>
-							<li><a href="{{URL::to('/logout')}}"><i class="halflings-icon off"></i> Logout</a></li>
+								<li><a href="{{URL::to('/logout')}}"><i class="halflings-icon off"></i> Logout</a></li>
 							</ul>
 						</li>
 						<!-- end: User Dropdown -->
@@ -324,34 +331,53 @@
 			</div>
 		</div>
 	</div>
+	
+
 	<!-- start: Header -->
 	
-		<div class="container-fluid-full">
+	
+<div class="container-fluid-full">
+
+
 		<div class="row-fluid">
 				
 			<!-- start: Main Menu -->
 			<div id="sidebar-left" class="span2">
 				<div class="nav-collapse sidebar-nav">
 					<ul class="nav nav-tabs nav-stacked main-menu">
-					<li><a href="{{URL::to('/dashboard')}}"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Dashboard</span></a></li>	
-					<li><a href="{{URL::to('/all-category')}}"><i class="icon-envelope"></i><span class="hidden-tablet"> All Category</span></a></li>
-					<li><a href="{{URL::to('/add-category')}}"><i class="icon-tasks"></i><span class="hidden-tablet"> Add Category</span></a></li>
-						<li><a href="ui.html"><i class="icon-eye-open"></i><span class="hidden-tablet"> All Brands</span></a></li>
-						<li><a href="widgets.html"><i class="icon-dashboard"></i><span class="hidden-tablet"> Add Brands</span></a></li>
+						<li><a href="{{url::to('/dashboardd')}}"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Dashboard</span></a></li>	
+						<li><a href="{{url::to('/all-category')}}"><i class="icon-envelope"></i><span class="hidden-tablet"> All Catrgory</span></a></li>
+						<li><a href="{{url::to('/add-category')}}"><i class="icon-tasks"></i><span class="hidden-tablet"> Add Catrgory</span></a></li>
+
+
+						<li><a href="{{url::to('/all-manufacture')}}"><i class="icon-eye-open"></i><span class="hidden-tablet"> All manufacture</span></a></li>
+						<li><a href="{{url::to('/add-manufacture')}}"><i class="icon-dashboard"></i><span class="hidden-tablet"> Add manufacture</span></a></li>
 						<li>
-							<a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> Products</span><span class="label label-important"> New </span></a>
+							<a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> Products</span><span class="label label-important"> 3 </span></a>
 							<ul>
-								<li><a class="submenu" href="submenu.html"><i class="icon-file-alt"></i><span class="hidden-tablet"> Sub Menu 1</span></a></li>
-								<li><a class="submenu" href="submenu2.html"><i class="icon-file-alt"></i><span class="hidden-tablet"> Sub Menu 2</span></a></li>
-								<li><a class="submenu" href="submenu3.html"><i class="icon-file-alt"></i><span class="hidden-tablet"> Sub Menu 3</span></a></li>
+								<li><a class="submenu" href="{{url::to('/all-product')}}"><i class="icon-file-alt"></i><span class="hidden-tablet">All Products</span></a></li>
+								<li><a class="submenu" href="{{url::to('/add-product')}}"><i class="icon-file-alt"></i><span class="hidden-tablet"> Add Products</span></a></li>
+							
 							</ul>	
 						</li>
-						<li><a href="form.html"><i class="icon-edit"></i><span class="hidden-tablet"> Slider</span></a></li>
-						<li><a href="chart.html"><i class="icon-list-alt"></i><span class="hidden-tablet"> Social Link</span></a></li>
+						<li>
+							<a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> Slider</span><span class="label label-important"> 3 </span></a>
+							<ul>
+								<li><a class="submenu" href="{{url::to('/add-slider')}}"><i class="icon-file-alt"></i><span class="hidden-tablet"> Add slider</span></a></li>
+								<li><a class="submenu" href="{{url::to('/all-slider')}}"><i class="icon-file-alt"></i><span class="hidden-tablet">All slider</span></a></li>
+								
+							
+							</ul>	
+						</li>
+						
+						<li><a href="{{url::to('/order-manage')}}"><i class="icon-list-alt"></i><span class="hidden-tablet">  Manage Order</span></a></li>
+
 						<li><a href="typography.html"><i class="icon-font"></i><span class="hidden-tablet"> Shop Name</span></a></li>
 						<li><a href="gallery.html"><i class="icon-picture"></i><span class="hidden-tablet"> Delivery Man</span></a></li>
-						
+
+					
 					</ul>
+
 				</div>
 			</div>
 			<!-- end: Main Menu -->
@@ -364,14 +390,12 @@
 			</noscript>
 			
 			<!-- start: Content -->
-			<div id="content" class="span10">
-			
-			
-			@yield('admin_content')
-			
-       
+<div id="content" class="span10">
 
-	        </div><!--/.fluid-container-->
+			@yield('admin_content')
+		
+
+	</div><!--/.fluid-container-->
 	
 			<!-- end: Content -->
 		</div><!--/#content.span10-->
@@ -396,60 +420,83 @@
 	<footer>
 
 		<p>
-			<span style="text-align:left;float:left">&copy; 2013 <a href="http://bootstrapmaster.com/" alt="Bootstrap Themes">creativeLabs</a></span>
-			<span class="hidden-phone" style="text-align:right;float:right">Powered by: <a href="http://admintemplates.co/" alt="Bootstrap Admin Templates">Metro</a></span>
+			<span style="text-align:left;float:left">&copy; 2013 <a href="http://jiji262.github.io/Bootstrap_Metro_Dashboard/" alt="Bootstrap_Metro_Dashboard">Bootstrap Metro Dashboard</a></span>
+			
 		</p>
 
 	</footer>
 	
 	<!-- start: JavaScript-->
-    <script src="{{asset('backend/js/jquery-1.9.1.min.js')}}"></script>
-    <script src="{{asset('backend/js/jquery-migrate-1.0.0.min.js')}}"></script>
-    <script src="{{asset('backend/js/jquery-ui-1.10.0.custom.min.js')}}"></script>
-    <script src="{{asset('backend/js/jquery.ui.touch-punch.js')}}"></script>
-    <script src="{{asset('backend/js/modernizr.js')}}"></script>
-    <script src="{{asset('backend/js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('backend/js/jquery.cookie.js')}}"></script>
-    <script src='{{asset('backend/js/fullcalendar.min.js')}}'></script>
-    <script src='{{asset('backend/js/jquery.dataTables.min.js')}}'></script>
-    <script src="{{asset('backend/js/excanvas.js')}}"></script>
-    <script src="{{asset('backend/js/jquery.flot.js')}}"></script>
-    <script src="{{asset('backend/js/jquery.flot.pie.js')}}"></script>
-    <script src="{{asset('backend/js/jquery.flot.stack.js')}}"></script>
-    <script src="{{asset('backend/js/jquery.flot.resize.min.js')}}"></script>
-    <script src="{{asset('backend/js/jquery.chosen.min.js')}}"></script>
-    <script src="{{asset('backend/js/jquery.uniform.min.js')}}"></script>
-    <script src="{{asset('backend/js/jquery.cleditor.min.js')}}"></script>
-    <script src="{{asset('backend/js/jquery.noty.js')}}"></script>
-    <script src="{{asset('backend/js/jquery.elfinder.min.js')}}"></script>
-    <script src="{{asset('backend/js/jquery.raty.min.js')}}"></script>
-    <script src="{{asset('backend/js/jquery.iphone.toggle.js')}}"></script>
-    <script src="{{asset('backend/js/jquery.uploadify-3.1.min.js')}}"></script>
-    <script src="{{asset('backend/js/jquery.gritter.min.js')}}"></script>
-    <script src="{{asset('backend/js/jquery.imagesloaded.js')}}"></script>
-    <script src="{{asset('backend/js/jquery.masonry.min.js')}}"></script>
-    <script src="{{asset('backend/js/jquery.knob.modified.js')}}"></script>
-    <script src="{{asset('backend/js/jquery.sparkline.min.js')}}"></script>
-    <script src="{{asset('backend/js/counter.js')}}"></script>
-    <script src="{{asset('backend/js/retina.js')}}"></script>
-	<script src="{{asset('backend/js/custom.js')}}"></script>
-	
-	<!-- end: JavaScript-->
 
-	<script src="{{asset('dashboard/js/bootbox.min.js')}}"></script>
-	<script type="text/javascript">
-		$(document).on('click',"#delete", function (e) {
-			e.preventDefault();
-			href = $(this).attr('href');
-			return bootbox.confirm('Are you want to delete?', function(result) {
-				if (result) {
-					window.location = href;
-				}
-			});
-		});
-	</script>
+		<script src="{{asset('dashboard/js/jquery-1.9.1.min.js')}}"></script>
+	    <script src="{{asset('dashboard/js/jquery-migrate-1.0.0.min.js')}}"></script>
+	
+		<script src="{{asset('dashboard/js/jquery-ui-1.10.0.custom.min.js')}}"></script>
+	
+		<script src="{{asset('dashboard/js/jquery.ui.touch-punch.js')}}"></script>
+	
+		<script src="{{asset('dashboard/js/modernizr.js')}}"></script>
+	
+		<script src="{{asset('dashboard/js/bootstrap.min.js')}}"></script>
+	
+		<script src="{{asset('dashboard/js/jquery.cookie.js')}}"></script>
+	
+		<script src='{{asset('dashboard/js/fullcalendar.min.js')}}'></script>
+	
+		<script src='{{asset('dashboard/js/jquery.dataTables.min.js')}}'></script>
+
+		<script src="{{asset('dashboard/js/excanvas.js')}}"></script>.
+		<script src="{{asset('dashboard/js/jquery.flot.js')}}"></script>
+		<script src="{{asset('dashboard/js/jquery.flot.pie.js')}}"></script>
+		<script src="{{asset('dashboard/js/jquery.flot.stack.js')}}"></script>
+		<script src="{{asset('dashboard/js/jquery.flot.resize.min.js')}}"></script>
+	
+		<script src="{{asset('dashboard/js/jquery.chosen.min.js')}}"></script>
+	
+		<script src="{{asset('dashboard/js/jquery.uniform.min.js')}}"></script>
+		
+		<script src="{{asset('dashboard/js/jquery.cleditor.min.js')}}"></script>
+	
+		<script src="{{asset('dashboard/js/jquery.noty.js')}}"></script>
+	
+		<script src="{{asset('dashboard/js/jquery.elfinder.min.js')}}"></script>
+	
+		<script src="{{asset('dashboard/js/jquery.raty.min.js')}}"></script>
+	
+		<script src="{{asset('dashboard/js/jquery.iphone.toggle.js')}}"></script>
+	
+		<script src="{{asset('dashboard/js/jquery.uploadify-3.1.min.js')}}"></script>
+	
+		<script src="{{asset('dashboard/js/jquery.gritter.min.js')}}"></script>
+	
+		<script src="{{asset('dashboard/js/jquery.imagesloaded.js')}}"></script>
+	
+		<script src="{{asset('dashboard/js/jquery.masonry.min.js')}}"></script>
+	
+		<script src="{{asset('dashboard/js/jquery.knob.modified.js')}}"></script>
+	
+		<script src="{{asset('dashboard/js/jquery.sparkline.min.js')}}"></script>
+	
+		<script src="{{asset('dashboard/js/counter.js')}}"></script>
+	
+		<script src="{{asset('dashboard/js/retina.js')}}"></script>
+
+		<script src="{{asset('dashboard/js/custom.js')}}"></script>
+	<!-- end: JavaScript-->
+	 <script src="{{asset('dashboard/js/bootbox.min.js')}}"></script>
+
+
+	 <script type="text/javascript">
+	 	$(document).on('click',"#delete", function (e) {
+	 		e.preventDefault();
+	 		href = $(this).attr('href');
+	 		return bootbox.confirm('Are you want to delete?', function(result) {
+	 			if (result) {
+	 				window.location = href;
+	 			}
+	 		});
+	 	});
+	 </script>
 	
 </body>
-
-<!-- Mirrored from bootstrapmaster.com/live/metro/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Jan 2018 16:56:47 GMT -->
 </html>

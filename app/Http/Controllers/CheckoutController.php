@@ -31,17 +31,17 @@ class CheckoutController extends Controller
 		return view('pages.checkout');
 	}
 
-		public function save_shiping_details(Request $request){
+		public function save_shipping_details(Request $request){
 				$data=array();
-				$data['shiping_email']=$request->shiping_email;
-				$data['shiping_first_name']=$request->shiping_first_name;
-				$data['shiping_last_name']=$request->shiping_last_name;
-				$data['shiping_address']=$request->shiping_address;
-				$data['shiping_mobile_number']=$request->shiping_mobile_number;		
-				$data['shiping_city']=$request->shiping_city;
-					$shiping_id=Db::table('tbl_shiping')
+				$data['shipping_email']=$request->shipping_email;
+				$data['shipping_first_name']=$request->shipping_first_name;
+				$data['shipping_last_name']=$request->shipping_last_name;
+				$data['shipping_address']=$request->shipping_address;
+				$data['shipping_mobile_number']=$request->shipping_mobile_number;		
+				$data['shipping_city']=$request->shipping_city;
+					$shiping_id=Db::table('tbl_shipping')
 				            ->insertGetId($data);
-				            Session::put('shiping_id',$shiping_id);
+				            Session::put('shipping_id',$shipping_id);
 				return Redirect::to('/payment');
 	}
 
@@ -138,9 +138,9 @@ class CheckoutController extends Controller
 
 			 ->join('tbl_customer','tbl_order.customer_id','=','tbl_customer.customer_id')
 			 ->join('tbl_order_details','tbl_order.order_id','=','tbl_order_details.order_id')
-			 ->join('tbl_shiping','tbl_order.shiping_id','=','tbl_shiping.shiping_id')
+			 ->join('tbl_shipping','tbl_order.shiping_id','=','tbl_shipping.shiping_id')
 
-             ->select('tbl_order.*','tbl_customer.*','tbl_order_details.*','tbl_shiping.*')
+             ->select('tbl_order.*','tbl_customer.*','tbl_order_details.*','tbl_shipping.*')
              ->get();
             
             /* echo "<pre>";

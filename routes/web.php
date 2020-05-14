@@ -18,7 +18,6 @@ use Illuminate\Support\Facades\Route;
 // });
 
 
-// Frontend Routes
 Route::get('/','HomeController@index');
 Route::get('/product_by_category/{category_id}','HomeController@show_product_by_category');
 Route::get('/product_by_category_home/{category_id}','HomeController@show_product_by_category_home');
@@ -48,29 +47,31 @@ Route::get('/view-order/{order_id}','CheckoutController@view_order');
 
 
 
-
-// Backend Routes
-
-
-
+//backend route....................................................................................
 Route::get('/logout','SuperAdminController@logout');
-Route::get('/admin', 'AdminController@index');
-Route::get('dashboard','AdminController@show_dashboard');
-Route::post('/admin_dashboard','AdminController@dashboard');
+Route::get('/admin','AdminController@index');
+Route::get('/dashboardd','SuperAdminController@index');
+Route::post('/admin-dashboard','AdminController@dashboard');
 
 
-//Category Related Route
+//category related routes...............
+
 Route::get('/add-category','CategoryController@index');
 Route::get('/all-category','CategoryController@all_category');
 Route::get('/save-category','CategoryController@save_category');
 Route::get('/edit-category/{category_id}','CategoryController@edit_category');
 Route::get('/update-category/{category_id}','CategoryController@update_category');
+
 Route::get('/delete-category/{category_id}','CategoryController@delete_category');
+
 Route::get('/unactive-category/{category_id}','CategoryController@unactive_category');
 Route::get('/active-category/{category_id}','CategoryController@active_category');
 
 
-//Manufacture or brand releated routes here!
+
+
+//manufacture as brand related routes...............
+
 Route::get('/all-manufacture','ManufactureController@all_manufacture');
 Route::get('/add-manufacture','ManufactureController@add_manufacture');
 Route::get('/save-manufacture','ManufactureController@save_manufacture');
@@ -108,5 +109,3 @@ Route::get('/unactive-slider/{product_id}','SliderController@unactive_slider');
 Route::get('/active-slider/{product_id}','SliderController@active_slider');
 
 Route::get('/delete-slider/{slider_id}','SliderController@delete_slider');
-
-
