@@ -14,7 +14,7 @@
 				
 					<div class="col-sm-12 clearfix">
 						<div class="bill-to">
-							<p>shipping Details</p>
+							<p>Shipping Details</p>
 							<div class="form-one">
 								<form action="{{url('/save_shipping_details')}}" method="post">
 								          {{ csrf_field() }}								

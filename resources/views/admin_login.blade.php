@@ -88,11 +88,7 @@
 							</div>
 							<div class="clearfix"></div>
 					</form>
-					<hr>
-					<h3>Forgot Password?</h3>
-					<p>
-						No problem, <a href="#">click here</a> to get a new password.
-					</p>	
+					<hr>	
 				</div><!--/span-->
 			</div><!--/row-->
 			
