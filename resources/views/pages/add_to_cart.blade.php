@@ -91,7 +91,7 @@
 					<div class="total_area">
 						<ul>
 							<li>Cart Sub Total <span>{{Cart::subtotal()}}</span></li>
-							<li>VAT <span>{{Cart::tax()}}</span></li>
+							<li>Eco Tax <span>{{Cart::tax()}}</span></li>
 							<li>Shipping Cost <span>Free</span></li>
 							<li>Total <span>{{Cart::total()}}</span></li>
 						</ul>
